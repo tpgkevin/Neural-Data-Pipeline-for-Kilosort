@@ -1,4 +1,5 @@
 # Neural Data Pipeline for Kilosort
 This project was commissioned to create an accessible pipeline for optimizing sorting of dense and large-scale neural data. It is built around a pre-existing library called Kilosort which uses machine learning techniques such as clustering and template matching to sort neurons across time even if they are located extremely close to one another. This pipeline took the already existing library and created a pre and post processing portion to minimize manual work to nearly zero. 
 
-## Pre-Proccessing
+## Pre-Processing
+The Pre-Processing portion of this project involved 3 primary objectives. First, it needed to load in continuous data across multiple rhd (form of binary data) files and package them in a single binary .dat file for kilosort to use. It then needed to clean the file before sending them to kilosort as neural data can be prone to [movement artifact noise](https://radiopaedia.org/articles/motion-artifact-2?lang=us). It also needed to create traces of the raw data before and after cleaning so that its work could be checked independently by researchers. 
