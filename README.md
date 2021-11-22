@@ -13,3 +13,10 @@ The primary goal of the Post-Processing section was to package all of the desire
 Finally the post-processing script created a single interactive (the example is a screenshot of the report. The graphs are completely interactable) and digestible visual report for each neuron:
 
 ![Example-Report](https://user-images.githubusercontent.com/35672096/142940293-c46fed76-c473-425d-8bb0-a6a7c5a48e7f.png)
+
+Traceview: trace of the raw data with the spikes highlited in red
+Waveform: Graph of spikes across time overlapped to show waveform of signal
+[PCA](https://royalsocietypublishing.org/doi/10.1098/rsta.2015.0202) - [wiki](https://en.wikipedia.org/wiki/Principal_component_analysis): Plot of the combinations of PCAs as well as plot of PCAs across time
+Amplitude: view of the amplitude of spikes across time
+[ISI](https://www.tau.ac.il/~tsirel/dump/Static/knowino.org/wiki/Interspike_interval.html#:~:text=The%20interspike%20interval%20is%20the,messengers%20to%20affect%20other%20neurons.): Histogram for the refractory period of the signal. used to see whether multiple signals were sorted as one
+Channel number and state: The last portion of the report prints out what channel the signal was recoded on and what state it was sorted in by kilosort (good/mua/bad)
