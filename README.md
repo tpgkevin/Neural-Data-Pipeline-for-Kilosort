@@ -8,4 +8,6 @@ The Pre-Processing portion of this project involved 3 primary objectives. First,
 Since a neuron will mostly appear on a single to a couple of channels, the cleaning of the data is done through taking the median of the data across multiple channels and zeroing out values that exceed some predetermined threshold. Given that the median is of enough channels, no neural data will be caught in the crossfire and all movement artifacts will be removed providing a much more clear picture of the neural signal.
 
 ## Post-Processing
+The primary goal of the Post-Processing section was to package all of the desired results into a single structure which could be easily interpreted and used by anyone. Kilosort saves most of its output across multiple files that require short commands or scripts to extract so streamlining this process was an absolute must for the researchers. Most of the results such as spike times were easy to process. However, some required opening the raw data again and extracting portions of the trace using the spike times. This was done to extract the waveforms of the neural signal.
+
 Finally the post-processing script created a single interactive and digestible visual report for each neuron: ![Example-Report](https://user-images.githubusercontent.com/35672096/142940293-c46fed76-c473-425d-8bb0-a6a7c5a48e7f.png)
