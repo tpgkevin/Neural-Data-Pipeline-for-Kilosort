@@ -8,3 +8,4 @@ The Pre-Processing portion of this project involved 3 primary objectives. First,
 Since a neuron will mostly appear on a single to a couple of channels, the cleaning of the data is done through taking the median of the data across multiple channels and zeroing out values that exceed some predetermined threshold. Given that the median is of enough channels, no neural data will be caught in the crossfire and all movement artifacts will be removed providing a much more clear picture of the neural signal.
 
 ## Post-Processing
+Finally the post-processing script created a single interactive and digestible visual report for each neuron: ![Example-Report](https://user-images.githubusercontent.com/35672096/142940293-c46fed76-c473-425d-8bb0-a6a7c5a48e7f.png)
