@@ -10,18 +10,20 @@ Since a neuron will mostly appear on a single to a couple of channels, all neura
 ## Post-Processing
 The primary goal of the Post-Processing section was to package all of the desired results into a single structure which could be easily interpreted and used by researchers.  Some of these results were extracted from kilosort's output, while some required efficiently opening and processing the raw data. 
 
-Finally the post-processing script created a single interactive and digestible visual report for each neuron:
+Finally the post-processing script created a single interactive and digestible visual report for each neuron:  
+
+(allowed researchers to validate results of kilosrt and also to ctalouge the results of the spike-sorting output.
 
 ![Example-Report](https://user-images.githubusercontent.com/35672096/142940293-c46fed76-c473-425d-8bb0-a6a7c5a48e7f.png)
 
 Traceview: trace of the raw data with the spikes highlighted in red  
 
-Waveform: Graph of spikes across time overlapped to show waveform of signal  
+Waveform: plot of the spike waveforms overlapped to verify the consistency of the waveform shape
 
-[PCA](https://royalsocietypublishing.org/doi/10.1098/rsta.2015.0202) - [wiki](https://en.wikipedia.org/wiki/Principal_component_analysis): Plot of the combinations of PCAs as well as plot of PCAs across time  
+[PCA](https://royalsocietypublishing.org/doi/10.1098/rsta.2015.0202) - [wiki](https://en.wikipedia.org/wiki/Principal_component_analysis): The first three PCAs of the waveform shape plotted against eachother as well as across time  
 
 Amplitude: view of the amplitude of spikes across time  
 
-[ISI](https://www.tau.ac.il/~tsirel/dump/Static/knowino.org/wiki/Interspike_interval.html#:~:text=The%20interspike%20interval%20is%20the,messengers%20to%20affect%20other%20neurons.): Histogram for the refractory period of the signal. used to see whether multiple signals were sorted as one  
+[ISI](https://www.tau.ac.il/~tsirel/dump/Static/knowino.org/wiki/Interspike_interval.html#:~:text=The%20interspike%20interval%20is%20the,messengers%20to%20affect%20other%20neurons.): Histogram of the interspike interval used to see whether the refractory period is violated  
 
-Channel number and state: The last portion of the report prints out what channel the signal was recorded on and what state it was sorted in by kilosort (good/mua/bad)
+Channel number and quality: The last portion of the report prints out what channel the the unit was recorded from and its quality of sorting (good/mua/bad)
