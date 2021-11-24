@@ -7,6 +7,7 @@ The Pre-Processing portion of this project involved 3 primary objectives. First,
 ### Data-Cleaning
 Since a neuron will mostly appear on a single to a couple of channels, all neural signal will be filtered out from the median of a large number of channels. However, noise, which largely remains consistent across channels, will be detectable on the median. By setting a low threshold on this median, we can determine and zero timepoints that are contaminated by noise while leaving neural signal unaffected. This method proved more effective than simple median subtraction in artifact removal for spike sorting.
 
+
 ## Post-Processing
 The primary goal of the Post-Processing section was to package all of the desired results into a single structure which could be easily interpreted and used by researchers.  Some of these results were extracted from kilosort's output, while some required efficiently opening and processing the raw data. 
 
@@ -14,7 +15,7 @@ Finally the post-processing script created a single interactive and digestible v
 
 (allowed researchers to validate results of kilosrt and also to ctalouge the results of the spike-sorting output.
 
-![Example-Report](https://user-images.githubusercontent.com/35672096/142940293-c46fed76-c473-425d-8bb0-a6a7c5a48e7f.png)
+![Example-Report](https://user-images.githubusercontent.com/35672096/143326569-563bc671-ed59-442a-a9df-3a60cb5c3ad9.png)
 
 Traceview: trace of the raw data with the spikes highlighted in red  
 
