@@ -11,7 +11,7 @@ Since a neuron will mostly appear on a single to a couple of channels, all neura
 ## Post-Processing
 The primary goal of the Post-Processing section was to package all of the desired results from Kilosort into a single structure which could be easily interpreted and used by researchers.  Some of these results were extracted from kilosort's output, while some required efficiently opening and processing the raw data. 
 
-Finally the post-processing script created a single interactive and digestible visual report for each neuron. This allowed researchers to validate results of Kilosrt and also to catalog the results of the spike-sorting output.
+Finally the post-processing script created a single interactive and digestible visual report for each neuron. This allowed researchers to validate results of Kilosort and also to catalog the results of the spike-sorting output.
 
 ![Example-Report](https://user-images.githubusercontent.com/35672096/143326569-563bc671-ed59-442a-a9df-3a60cb5c3ad9.png)
 
